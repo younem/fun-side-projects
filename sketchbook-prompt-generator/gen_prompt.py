@@ -28,7 +28,20 @@ prompt_order = ["person", "object", "drink", "animal", "food", "plant", "plant",
 '''
 Function that resets the unused prompts to the orignal list.
 Parameters: listname(str)
-Return: {}
+Return: {
+    "prev_prompts":[]
+    "prev_person": "str",
+    "anatomy": [],
+    "animal": [],
+    "characterdesign": [],
+    "drink": [],
+    "emotion": [],
+    "food": [],
+    "object": [],
+    "plant": [],
+    "pose": [],
+    "scenery": [],
+    }
 '''
 def reset_prompt_list(listname):
     dir = "prompts/"
@@ -57,10 +70,10 @@ Return: None
 '''
 def search_reference(prompt, category):
     base_url = "https://www.pinterest.com.au/search/pins/?q="
-    prompt.replace(' ', '%20')
-    url = base_url + prompt + category + "reference"
+    prompt = prompt.replace(" ", "%20")
+    prompt = prompt.replace("''", "%27")
+    url = base_url + prompt + "%20" + category + "%20" + "reference"
     webbrowser.open(url)
-
 '''
 Function which cycles to the next prompt category and randomly selects a prompt.
 Parameters: None
