@@ -2,11 +2,13 @@
 <p>This program generates drawing prompts and opens a Pinterest search result with possible references. The generator cycles through various subcategories.  </p>
 
 <h2>Files Included</h2>
-    * gen_prompt.py
-    * standardisejsonfile.py
-    * add_prompt.py
-    * prompts directory containing .json files with prompt lists
-    * data.json
+
+<ul>
+    <li>gen_prompt.py</li>
+    <li>standardisejsonfile.py</li>
+    <li>prompts directory containing .json files with prompt lists</li>
+    <li>data.json</li>
+</ul>
 
 <h2>How to run</h2>
 
