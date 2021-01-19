@@ -12,11 +12,11 @@
 
 <h2>How to run</h2>
 
-To generate a new prompt run:
-    <td>python3 gen_prompt.py</td>
+To generate a new prompt run:<br>
+    python3 gen_prompt.py
 
-To add a new prompt to one of the prompt list json files run:
+To add a new prompt to one of the prompt list json files run:<br>
     <td>python3 add_prompt.py</td>
 
-If the prompt json files are edited directly, to standardise the file run:
+If the prompt json files are edited directly, to standardise the file run:<br>
     <td>python3 standardisejsonfile.py</td>
